@@ -1,0 +1,233 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+html{
+    /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none; /*Chrome, Safari, newer versions of Opera*/
+    -moz-text-size-adjust: none; /*Firefox*/
+    -ms-text-size-adjust: none;  /*Ie*/
+    -o-text-size-adjust: none; /*old versions of Opera*/
+}
+body{
+    /* 가장 많이 쓰는 글 */
+    font-family: 'pretendard';
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #333;
+}
+#wrap{
+    min-width: 1400px;
+    overflow: hidden;
+}
+#header{
+    height: 80px;
+    background-color: #fff;
+}
+.inner_header{
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav h1{
+    padding-top: 20px;
+}
+.gnb{
+    display: flex;
+    padding-top: 30px;
+}
+.gnb> li> a{
+    display: block;
+    margin: 0 20px;
+}
+.login{
+    position: absolute;
+    top: 30px;
+    right: -150px;
+    z-index: 9;
+}
+.login ul{
+    display: flex;
+    width: 140px;
+}
+.login ul li a{
+    display: block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #666;
+}
+.top_btn{
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #666;
+    color: white;
+    padding-top: 14px;
+    padding-left: 7px;
+    box-sizing: border-box;
+}
+#content1{
+    background: url(../images/sub1_about/mainbanner1_blur.jpg) center center no-repeat;
+    height: 1100px;
+    /* width: 1920px; */
+}
+.inner_content1{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 480px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.maintitle{
+
+}
+.text_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    color: #fff;
+}
+.bg2 {
+    transition: all 1s;
+    position: relative;
+    width: 0%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 9;
+}
+.bg2 img {
+    width: 100vw;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.widthAni {
+    width: 100%;
+}
+.text_wrap span{
+    font-size: 16px;
+}
+.text_wrap h3{
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 20px;
+}
+.text_wrap p{
+    margin-top: 45px;
+}
+
+
+
+
+
+
+
+
+
+#footer{
+    background-color: #333;
+    height: 250px;
+    color: #F2A848;
+    font-size: 11px;
+}
+.inner_footer{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between ;
+    padding-top: 50px;
+}
+.footer_logo{
+    display: flex;
+}
+.footer_logo ul{
+    margin-left: 50px;
+    display: flex;
+    padding-top: 15px;
+}
+.footer_logo ul li{
+    margin-right: 20px;
+}
+.footer_left p{
+    margin-top: 30px;
+    line-height: 1.3em;
+}
+.footer_left p span{
+    font-weight: bold;
+}
+.footer_right ul{
+    display: flex;
+}
+.footer_right ul li{
+    margin-left: 20px;
+}
