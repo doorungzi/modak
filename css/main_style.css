@@ -108,6 +108,9 @@ body{
     display: block;
     margin: 0 20px;
 }
+.gnb>li:hover>a{
+    color: #515614;
+}
 .login{
     position: absolute;
     top: 30px;
@@ -514,4 +517,10 @@ position: fixed;
     padding-top: 14px;
     padding-left: 7px;
     box-sizing: border-box;
+    transition: all 0.3s;
+}
+.top_btn:hover{
+    cursor: pointer;
+    background-color: #F2A848;
+    transform: scale(1.2);
 }
