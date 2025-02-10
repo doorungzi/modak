@@ -218,7 +218,7 @@ body {
 }
 
 
-
+input:focus {outline: none;}
 .search{
     position: absolute;
     right: 0;
