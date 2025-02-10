@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>MODAK</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 웹폰트 연결하기 -->
+    <!--
+* font name: "Pretendard" 
+* description: 모든 기능 
+-->
+    <!-- html에서 작성하는 경우 -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+
+<body>
+    <!-- 헤더, 푸터 css를 공통으로 넣어도 괜찮. 공통으로 되는 애들을 묶어서
+     근데 나는 클래스 아이디 관리 잘 못해ㅣ... 폰트 공통으로 묶는건 우째하는기고? css여러개 붙이기 ㅇㅎ-->
+    <div id="wrap">
+        <div id="header">
+            <div class="inner_header">
+                <div class="nav">
+                    <h1><a href="index.html"><img src="images/header/h1_main_logo.svg" alt="mainlogo"></a></h1>
+                    <ul class="gnb">
+                        <li>
+                            <a href="sub1_about.html">ABOUT US</a>
+                        </li>
+                        <li>
+                            <a href="sub2_community.html">COMMUNITY</a>
+                        </li>
+                        <li>
+                            <a href="sub3_magazine.html">MAGAZINE</a>
+                        </li>
+                        <li>
+                            <a href="sub4_shop.html">MODAK SHOP</a>
+                        </li>
+                        <li>
+                            <a href="sub5_events.html">EVENTS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <ul>
+                        <li><a href="#">LOGIN</a></li>
+                        <li><a href="#">MY PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="index.html#header" class="top_btn">TOP</a>
+        <div id="main_banner">
+            <video muted="" preload="true" loop autoplay webkit-playsinline="webkit-playsinline"
+                playsinline="playsinline">
+                <source src="media/main_video.mp4" type="video/mp4">
+            </video>
+
+        </div>
+        <div id="content1">
+            <div class="inner_content1">
+                <h2 class="title">ABOUT US</h2>
+                <h3 class="slogan">WALK THROUGH THE FOREST, <br>
+                    COUNT THE STARS, <br>
+                    AND CHERISH THIS VERY MOMENT.</h3>
+                <div class="content1_wrap">
+                    <div class="content_img"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800">
+                        <img src="images/main/content1-1.jpg" alt="content1">
+                    </div>
+                    <div data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="800">
+                        <div class="content1_text">
+                            <span>우리는 캠핑 커뮤니티 '모닥'</span>
+                            <h3>캠핑을 좋아하는 청년들이 <br>하나로 모이다</h3>
+                            <p>'모닥'은 단순히 캠핑만을 즐기는 모임이 아닙니다. <br>
+                                공통의 관심사를 계기로 모인 청년들의 움직임이 하나의 커뮤니티를 넘어 우리가 속한 지역 <br>
+                                사회, 더 나아가 문화를 향유하는 모든 사람들에게 긍정적인 영향력을 끼칠 수 있도록 함께 <br> 고민하고 성장하는 공동체입니다.
+                            </p>
+                            <a href="sub1_about.html" class="readmore">READ MORE +</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content1_wrap cnt_wrap2">
+                    <div data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800">
+                        <div class="content1_text cnt_wrap2txt">
+                            <span>우리는 캠핑 커뮤니티 '모닥'</span>
+                            <h3>캠핑을 사랑한다면<br>누구든 환영</h3>
+                            <p>우리는 '캠핑 문화'를 중심으로 모인 커뮤니티입니다. <br>
+                                캠핑을 사랑하는 이들은 누구나 존중받아 마땅합니다. <br>
+                                백패커, 오토캠퍼, 모토캠퍼, 바이캠퍼 등, 캠핑을 즐기는 모든 이들이 어우러져 <br>
+                                바다와 산, 그리고 세상의 구석구석을 탐험하고 여행하며 <br>
+                                모닥 가족들과 함께 잊지 못할 소중한 추억을 만들어가길 바랍니다.
+                            </p>
+                            <a href="sub1_about.html" class="readmore">READ MORE +</a>
+                        </div>
+                    </div>
+                    <div class="content1_img"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="800">
+                        <img src="images/main/content1-2.jpg" alt="content1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="magazine_switch"></div>
+        <div id="content2">
+            <div class="inner_content2">
+                <h1 class="title">WHAT WE DO</h1>
+                <ul class="we_do">
+                    <li data-aos="zoom-in-up"
+                    data-aos-duration="600">
+                        <a href="sub1_about.html#content3">
+                            <img src="images/main/wedo_1.png" alt="wedo">
+                        </a>
+                        <span>초보자도 언제나 환영!</span>
+                        <p>캠린이를 위한 코칭반이 있습니다. <br>
+                            텐트 피칭, 패키징, 불피우기 등 <br>
+                            회원들과 기초부터 배우는 캠핑 <br>
+                            나도 이제 어엿한 캠퍼!</p>
+                    </li>
+                    <li data-aos="zoom-in-up"
+                    data-aos-duration="700">
+                        <a href="sub1_about.html#content3">
+                            <img src="images/main/wedo_2.png" alt="wedo">
+                        </a>
+                        <span>정기 캠핑모임</span>
+                        <p>두 달 마다 정기모임을 갖습니다 <br>
+                            각 계절의 테마에 맞춰 진행되며 <br>
+                            지역, 성별, 나이를 맞춰 편성된 <br>
+                            조별 활동 친목회가 진행됩니다!</p>
+                    </li>
+                    <li data-aos="zoom-in-up"
+                    data-aos-duration="800">
+
+                        <a href="sub1_about.html#content3">
+                            <img src="images/main/wedo_3.png" alt="wedo">
+                        </a>
+                        <span>다양한 테마 캠핑</span>
+                        <p>버스킹 + 캠핑의 조합 버스캠 <br>
+                            캠핑지 주변 쓰레기를 줍는 플로캠 <br>
+                            요리왕을 가리는 모닥 요리대회 등 <br>
+                            다양한 테마의 캠핑을 함께해봐요!</p>
+                    </li>
+                    <li data-aos="zoom-in-up"
+                    data-aos-duration="900">
+                        <a href="sub1_about.html#content3">
+                            <img src="images/main/wedo_4.png" alt="wedo">
+                        </a>
+                        <span>지역사회 협업</span>
+                        <p>부산광역시, 경상남도와 결탁하여 <br>
+                            올바른 캠핑문화 정착 캠페인, <br>
+                            환경 보존 캠핑강연 등 <br>
+                            지자체와 상생하고 있습니다. </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="content3">
+            <div class="inner_content3">
+                <div data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">
+                    <div class="content3_text">
+                        <h2>MODAK MAGAZINE</h2>
+                        <p>모닥클럽에서 자체적으로 생산하는 정보 모음집입니다. <br>
+                            캠핑 문화에 대한 최신 트렌드, 신상 캠핑 장비, <br>
+                            우리동네 맛집 캠핑장 TOP 5 등 여러 정보를 받아보세요.</p>
+                        <a href="sub3_magazine.html" class="readmore">READ MORE +</a>
+                    </div>
+                </div>
+                <div class="card_left card">
+                    <ul>
+                        <li>
+                            <img src="images/main/card_1.jpg" alt="card">
+                        </li>
+                        <li>
+                            <img src="images/main/card_2.jpg" alt="card">
+                        </li>
+                        <li>
+                            <img src="images/main/card_7.jpg" alt="card">
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_middle card">
+                    <ul>
+                        <li>
+                            <img src="images/main/card_3.jpg" alt="card">
+                        </li>
+                        <li>
+                            <img src="images/main/card_4.jpg" alt="card">
+                        </li>
+                        <li>
+                            <img src="images/main/card_5.jpg" alt="card">
+                        </li>
+                    </ul>
+                </div>
+                <div class="card_right card">
+                    <ul>
+                        <li>
+                            <img src="images/main/card_6.jpg" alt="card">
+                        </li>
+                        <li>
+                            <img src="images/main/card_7.jpg" alt="card">
+                        </li>
+                        <li>
+                            <img src="images/main/card_1.jpg" alt="card">
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div id="content4">
+            <div class="inner_content4">
+                <h2 class="title">MODAK SHOP</h2>
+                <div id="section">
+                    <ul class="slide_toggle">
+                        <li>
+                            <div class="toggle_text">
+                                <h3>MODAK <br> APPERAL</h3>
+                                <h3 class="btn_more">+</h3>
+                                <div class="toggle_else">
+                                    <p>모닥만의 감성으로 디자인 한 <br>
+                                        아웃도어 의류 브랜드
+                                    </p>
+                                    <a href="sub4_shop.html" class="readmore">바로가기</a>
+                                </div>
+                            </div>
+                            <div class="toggle_photo">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/shop1_1.jpg" alt="">
+                                        <p>APPERAL</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shop1_2.jpg" alt="">
+                                        <p>BAGS</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shop1_3.jpg" alt="">
+                                        <p>ACC</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_text">
+                                <h3>CAMPING <br> GEAR</h3>
+                                <h3 class="btn_more">+</h3>
+                                <div class="toggle_else">
+                                    <p>무난한 디자인은 그만,
+                                        <br> 모닥만의 특별한 용품들
+                                    </p>
+                                    <a href="sub4_shop.html" class="readmore">바로가기</a>
+                                </div>
+                            </div>
+                            <div class="toggle_photo">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/shop2_1.jpg" alt="">
+                                        <p>TENTS</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shop2_2.jpg" alt="">
+                                        <p>TABLE&CHAIR</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shop2_3.jpg" alt="">
+                                        <p>COOKING EQUIPMENTS</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="toggle_text">
+                                <h3>MODAK <br> SECONDHAND</h3>
+                                <h3 class="btn_more">+</h3>
+                                <div class="toggle_else">
+                                    <p>모닥 자체 검증단을 통한 <br>
+                                        확실하고 간편한 중고거래
+                                    </p>
+                                    <a href="sub4_shop.html" class="readmore">바로가기</a>
+                                </div>
+                            </div>
+                            <div class="toggle_photo secondhand_3rd">
+                                <ul>
+                                    <li>
+                                        <img src="images/main/shop3_1.jpg" alt="">
+                                        <p>중고상품 대리판매</p>
+                                    </li>
+                                    <li>
+                                        <img src="images/main/shop3_2.jpg" alt="">
+                                        <p>안전거래 시스템</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="content5">
+            <div class="inner_content5">
+            <h2 class="title">EVENTS</h2>
+            <ul class="poster">
+                <li>
+                    <div><img src="images/main/poster1.jpg" alt="poster"></div>
+                    <span>테마캠핑</span>
+                    <p>BUSCAM NIGHT IN DAEJEO</p>
+                    <span>2025. 4. 23. 16:00</span>
+                </li>
+                <li>
+                    <div><img src="images/main/poster2.jpg" alt="poster"></div>
+                    <span>테마캠핑</span>
+                    <p>PLOCAM IN HWAMYUNG</p>
+                    <span>2025. 5. 12. 13:00</span>
+                </li>
+                <li>
+                    <div><img src="images/main/poster3.jpg" alt="poster"></div>
+                    <span>플리마켓</span>
+                    <p>2ND MODAK FLEAMARKET</p>
+                    <span>2025. 4. 30. 13:00</span>
+                </li>
+            </ul>
+            <div></div>
+            <a href="sub5_events.html" class="readmore">바로가기</a>
+            </div>
+        </div>
+        <div id="content6">
+            <div class="inner_content6">
+                <div class="phone_wrap">
+                    <img src="images/main/iphone.png" alt="smartpnone">
+                </div>
+                <div class="text_wrap">
+                    <h3>모닥 멤버십 APP 다운로드</h3>
+                    <p>언제 어디서나 새로운 캠핑 매거진 소식 받아보기 <br>
+                        다양한 이벤트와 할인행사 알림 받아보기 <br>
+                        앱 전용 채팅기능으로 회원들과 쉽게 소통하기</p>
+                    <div class="store_link">
+                        <img src="images/main/app_download.png" alt="down">
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="inner_footer">
+                <div class="footer_left">
+                    <div class="footer_logo">
+                    <h1><a href="index.html"><img src="images/footer/footer_main_logo.svg" alt="main"></a></h1>
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">매장안내</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                    </div>
+                    <p>
+                        <span>대표이사</span> 김두현 <br>
+                        부산광역시 대저1동 2408-3 <br>
+                        TEL. 051-334-3534 <br>
+                        Copyright 2022 MODAK All Right Reserved
+                    </p>
+                </div>
+                <div class="footer_right">
+                    <ul>
+                        <li><a href="#"><img src="images/footer/icon_1.png" alt="instagram"></a></li>
+                        <li><a href="#"><img src="images/footer/icon_2.png" alt="X"></a></li>
+                        <li><a href="#"><img src="images/footer/icon_3.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="images/footer/icon_4.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- gsap cdn-->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+        <!-- Scroll Trigger -->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+        <script>
+            gsap.registerPlugin(ScrollTrigger);
+            gsap.to(".card_left", {
+                x: 0,
+                y: 100,
+                scale: 1,
+                scrollTrigger: {
+                    trigger: "#content2",//요소가 뷰포트에 드러나는 순간부터 애니메이션이 작동
+                    start: "top top",//애니메이션 시작시점
+                    end: "bottom bottom",//애니메이션 종료시점
+                    scrub: 5,//true 또는 숫자를 입력한다(숫자가 클수록 부드러워짐)
+                    markers: false,
+                },
+            });
+            gsap.to(".card_middle", {
+                x: 0,
+                y: -100,
+                scale: 1,
+                scrollTrigger: {
+                    trigger: "#content2",//요소가 뷰포트에 드러나는 순간부터 애니메이션이 작동
+                    start: "top top",//애니메이션 시작시점
+                    end: "bottom bottom",//애니메이션 종료시점
+                    scrub: 5,//true 또는 숫자를 입력한다(숫자가 클수록 부드러워짐)
+                    markers: false,
+                },
+            });
+            gsap.to(".card_right", {
+                x: 0,
+                y: 100,
+                scale: 1,
+                scrollTrigger: {
+                    trigger: "#content2",//요소가 뷰포트에 드러나는 순간부터 애니메이션이 작동
+                    start: "top top",//애니메이션 시작시점
+                    end: "bottom bottom",//애니메이션 종료시점
+                    scrub: 5,//true 또는 숫자를 입력한다(숫자가 클수록 부드러워짐)
+                    markers: false,
+                },
+            });
+        </script>
+</body>
+
+</html>

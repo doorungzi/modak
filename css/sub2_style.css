@@ -1,0 +1,483 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paperlogy_4Regular';
+    src: url('../fonts/Paperlogy-4Regular.ttf') format('truetype');
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+    -ms-text-size-adjust: none;
+    /*Ie*/
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    /* 가장 많이 쓰는 글 */
+    font-family: 'pretendard';
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #333;
+}
+
+#wrap {
+    min-width: 1400px;
+
+}
+
+#header {
+    height: 80px;
+    background-color: #fff;
+}
+
+.inner_header {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav h1 {
+    padding-top: 20px;
+}
+
+.gnb {
+    display: flex;
+    padding-top: 30px;
+}
+
+.gnb>li>a {
+    display: block;
+    margin: 0 20px;
+}
+
+.gnb>li:hover>a {
+    color: #515614;
+}
+
+.login {
+    position: absolute;
+    top: 30px;
+    right: -150px;
+    z-index: 9;
+}
+
+.login ul {
+    display: flex;
+    width: 140px;
+}
+
+.login ul li a {
+    display: block;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    color: #666;
+}
+
+.top_btn {
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #666;
+    color: white;
+    padding-top: 14px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.top_btn:hover {
+    cursor: pointer;
+    background-color: #F2A848;
+    transform: scale(1.2);
+}
+
+#main_banner {
+    height: 300px;
+    background-image: url(../images/sub2_community/main_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.banner_title {
+    font-size: 60px;
+    color: white;
+    font-family: 'paperlogy_4Regular';
+    font-weight: 400;
+    
+}
+#section_wrap{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.section_left{
+    width: 260px;
+}
+.lnb li{
+    border-top: #e7e7e785 1px solid;
+    border-bottom: #cdcdcd 1px solid;
+}
+.lnb>li>p.btn_color{
+    background-color: #64691F;
+    color: white;
+}
+.lnb li p{
+    background-color: #e3e3e3;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+.lnb li p:hover{
+    background-color: #64691F;
+    color: white;
+}
+.section_right{
+    width: 985px;
+    position: relative;
+    padding-bottom: 100px;
+}
+.title_bar{
+    width: 100%;
+    background-color: #64691F;
+    /* height: 50px; */
+    padding: 13px 15px;
+    margin-bottom: 45px;
+    box-sizing: border-box;
+    position: relative;
+}
+.title_bar p{
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+
+.search{
+    position: absolute;
+    right: 0;
+    top: 60px;
+}
+
+.search_txt{
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+}
+.search_btn{
+    border: none;
+    background-color: none;
+    width: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 7px;
+    cursor: pointer;
+}
+.search_btn img{
+    display: block;
+    margin-right: 5px;
+}
+.open_forum{
+    height: 950px;
+}
+.community_tab{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 15px 15px 10px 30px;
+    border: 1px #666 solid;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.community_tab_profile{
+    width: 100px;
+}
+.community_tab_profile img{
+    display: block;
+    border-radius: 50px;
+}
+.community_tab_profile>p{
+    font-size: 13px;
+    margin-top: 15px;
+    text-align: center;
+}
+.community_tab_text{
+    width: 580px;
+}
+.community_tab_text h3{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.community_tab_text span{
+    color: #F2A848;
+}
+.community_tab_text>p{
+    font-size: 16px;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+.community_tab_text strong{
+    cursor: pointer;
+}
+.community_tab_text_date{
+    display: flex;
+    font-size: 13px;
+    color: #aaa;
+}
+.community_tab_text_date p{
+    margin-right: 40px;
+}
+
+
+.community_tab_image{
+    width: 200px;
+    
+}
+.community_tab_image img{
+    display: block;
+    border-radius: 10px;
+}
+.popup_wrap{
+    position: absolute;
+    width: 1000px;
+    height: 400px;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 100px;
+    z-index: 9;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2 );
+}
+.popup_txt{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.popup_txt h3{
+    margin-bottom: 50px;
+}
+.btn_close{
+    width: 50px;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+
+
+.photo_forum{
+    
+}
+.photo_forum_grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.photo_forum_grid li{
+    width: 300px;
+    margin-bottom: 60px;
+}
+.photo_forum_img{
+    margin-bottom: 10px;
+}
+.photo_forum_img img{
+    display: block;
+    width: 100%;
+}
+.photo_forum_txt{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.photo_forum_txt p{
+    font-weight: 500;
+}
+.photo_forum_txt span{
+    font-size: 16px;
+    color: #9b9b9b;
+}
+
+.page_btn{
+    width: 100px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -50px;
+}
+.number_btn{
+    display: flex;
+}
+.number_btn li{
+    padding: 0 10px;
+    cursor: pointer;
+}
+.btn_no1{
+    
+    font-weight: 800;
+}
+
+
+/* lnb 클릭하면 색깔 달라지면서 다른 탭이 나와야함 
+자유게시판 어두운색 기본값 class로 줘놓기
+자유게시판/사진게시판 이름이 달라져야 함
+*/
+.community_content{
+        /* tab 관련 속성 */
+        height: 0;
+        overflow: hidden;
+}
+
+.on{
+    height: 800px;
+}
+
+
+
+
+
+
+
+/* footer */
+#footer {
+    background-color: #333;
+    height: 250px;
+    color: #F2A848;
+    font-size: 11px;
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer_logo {
+    display: flex;
+}
+
+.footer_logo ul {
+    margin-left: 50px;
+    display: flex;
+    padding-top: 15px;
+}
+
+.footer_logo ul li {
+    margin-right: 20px;
+}
+
+.footer_left p {
+    margin-top: 30px;
+    line-height: 1.3em;
+}
+
+.footer_left p span {
+    font-weight: bold;
+}
+
+.footer_right ul {
+    display: flex;
+}
+
+.footer_right ul li {
+    margin-left: 20px;
+}
