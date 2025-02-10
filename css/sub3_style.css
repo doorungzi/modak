@@ -359,7 +359,7 @@ body {
     position: relative;
     margin-bottom: 80px;
 }
-
+input:focus {outline: none;}
 .search{
     position: absolute;
     right: 0;
