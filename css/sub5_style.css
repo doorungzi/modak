@@ -1,0 +1,374 @@
+@charset 'utf-8';
+
+@font-face {
+    font-family: 'Paperlogy-8ExtraBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'paperlogy_4Regular';
+    src: url('../fonts/Paperlogy-4Regular.ttf') format('truetype');
+}
+
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+em,
+img,
+small,
+strong,
+b,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tr,
+th,
+td,
+article,
+aside,
+footer,
+header,
+nav,
+section,
+summary,
+video,
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    /* Prevent font scaling in landscape */
+    -webkit-text-size-adjust: none;
+    /*Chrome, Safari, newer versions of Opera*/
+    -moz-text-size-adjust: none;
+    /*Firefox*/
+    -ms-text-size-adjust: none;
+    /*Ie*/
+    -o-text-size-adjust: none;
+    /*old versions of Opera*/
+}
+
+body {
+    /* 가장 많이 쓰는 글 */
+    font-family: 'pretendard';
+    font-size: 18px;
+    line-height: 1.3em;
+    color: #333;
+}
+
+#wrap {
+    min-width: 1400px;
+
+}
+
+#header {
+    height: 80px;
+    background-color: #fff;
+}
+
+.inner_header {
+    width: 1320px;
+    margin: 0 auto;
+
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav h1 {
+    padding-top: 20px;
+}
+
+.gnb {
+    display: flex;
+    padding-top: 30px;
+}
+
+.gnb>li>a {
+    display: block;
+    margin: 0 20px;
+}
+
+.gnb>li:hover>a {
+    color: #515614;
+}
+
+.top_btn {
+    display: inline-block;
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 100;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #666;
+    color: white;
+    padding-top: 14px;
+    padding-left: 7px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.top_btn:hover {
+    cursor: pointer;
+    background-color: #F2A848;
+    transform: scale(1.2);
+}
+
+#main_banner {
+    height: 300px;
+    background-image: url(../images/sub5_events/main_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.banner_title {
+    font-size: 60px;
+    color: white;
+    font-family: 'paperlogy_4Regular';
+    font-weight: 400;
+}
+
+#section1 {
+    margin-top: 100px;
+    width: 1320px;
+    margin: 100px auto 200px;
+}
+
+.maintitle {
+    font-size: 40px;
+    color: #628F19;
+    font-family: 'paperlogy_4Regular';
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.poster_grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.poster_grid li {
+    width: 400px;
+    cursor: pointer;
+}
+
+.grid_img img {
+    width: 100%;
+    display: block;
+}
+
+.grid_txt span {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.grid_txt h3 {
+    font-size: 26px;
+    margin: 5px 0 20px;
+}
+
+.poster_grid li:hover {
+    transform: translateY(-30px);
+}
+
+.poster_grid>li {
+    transition: all 0.5s;
+}
+
+#section2 {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.event_grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.event_grid li {
+    width: 400px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.event_2nd {
+    justify-content: flex-start;
+}
+
+.event_2nd li {
+    margin-right: 60px;
+}
+.event_grid .grid_img{
+    position: relative;
+    overflow: hidden;
+}
+.event_grid .grid_img img{
+    transition: all 0.6s;
+}
+.grid_img_cover{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 500px;
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    text-align: center;
+    padding-top: 240px;
+    box-sizing: border-box;
+}
+.grid_img_cover p{
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    background-color: rgb(194, 194, 194);
+    padding: 10px 25px;
+    border-radius: 30px;
+    
+}
+.event_grid li:hover .grid_img_cover{
+    display: block;
+}
+.event_grid li:hover .grid_img>img{
+    transform: scale(1.05);
+}
+#section3{
+    margin-top: 100px;
+    height: 400px;
+    background-color: #eee;
+}
+.inner_section3{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.phone_wrap{
+    width: 350px;
+    position: relative;
+}
+.phone_wrap img{
+    position: absolute;
+    top: -70px;
+    left: 0;
+    z-index: 9;
+}
+.text_wrap{
+    margin-top: 85px;
+}
+.text_wrap h3{
+    font-size: 45px;
+    font-weight: 800;
+}
+.text_wrap p{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin: 20px 0 30px;
+}
+.store_link{
+    cursor: pointer;
+}
+
+
+
+
+/* footer */
+#footer {
+    background-color: #333;
+    height: 250px;
+    color: #F2A848;
+    font-size: 11px;
+}
+
+.inner_footer {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer_logo {
+    display: flex;
+}
+.footer_logo h1{
+    cursor: pointer;
+}
+.footer_logo ul {
+    margin-left: 50px;
+    display: flex;
+    padding-top: 15px;
+}
+
+.footer_logo ul li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer_left p {
+    margin-top: 30px;
+    line-height: 1.3em;
+}
+
+.footer_left p span {
+    font-weight: bold;
+}
+
+.footer_right ul {
+    display: flex;
+}
+
+.footer_right ul li {
+    margin-left: 20px;
+}
+.footer_right ul li img{
+    cursor: pointer;
+}
+.footer_right ul li img{
+    cursor: pointer;
+}
